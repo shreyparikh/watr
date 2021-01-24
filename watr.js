@@ -37,8 +37,6 @@ function create_form() {
 
 	form.style.opacity = 0;
 	document.getElementsByTagName("body")[0].appendChild(form);
-
-	FadeIn(form);
 }
 
 
