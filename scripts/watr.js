@@ -20,7 +20,7 @@ function create_form() {
 	meatcontainer.id = "meatcontainer";
 	var mLabel = document.createElement("label");
 	mLabel.setAttribute("for", "meatcontainer");
-	mLabel.innerHTML = "What would you rate your meat consumption?";	
+	mLabel.innerHTML = "What would you rate your meat consumption?";
 	var meatH = document.createElement("input");
 	meatH.setAttribute("type", "radio");
 	meatH.name = "meat";
@@ -112,7 +112,7 @@ function create_form() {
 	dairycontainer.appendChild(dLLabel);
 	dairycontainer.appendChild(dairyN);
 	dairycontainer.appendChild(dNLabel);
-	
+
 	dietcontainer.appendChild(mLabel);
 	dietcontainer.appendChild(meatcontainer);
 	dietcontainer.appendChild(dLabel);
@@ -202,7 +202,7 @@ function create_form() {
 	shower.id = "shower";
 	shower.name = "shower";
 	showerval.innerHTML = shower.value + " minutes";
-	shower.oninput = function(){
+	shower.oninput = function () {
 		showerval.innerHTML = this.value + " minutes";
 	}
 	var showerL = document.createElement("label");
@@ -222,7 +222,7 @@ function create_form() {
 	toilet.id = "toilet";
 	toilet.name = "toilet";
 	flushval.innerHTML = toilet.value + " flushes";
-	toilet.oninput = function(){
+	toilet.oninput = function () {
 		flushval.innerHTML = this.value + " flushes";
 	}
 	var toiletL = document.createElement("label");
@@ -237,7 +237,7 @@ function create_form() {
 	lowflow_toiletL.setAttribute("for", "lowflow_toilet");
 	toiletcontainer.appendChild(toiletL);
 	toiletcontainer.appendChild(toilet);
-	toiletcontainer.appendChild(flushval);	
+	toiletcontainer.appendChild(flushval);
 	toiletcontainer.appendChild(lowflow_toiletL);
 	toiletcontainer.appendChild(lowflow_toilet);
 
@@ -265,7 +265,7 @@ function create_form() {
 	var handwashL = document.createElement("label");
 	handwashL.innerHTML = "I wash by hand";
 	handwashL.setAttribute("for", "handwash");
-	
+
 	handwash.required = true;
 	dishwashercontainer.appendChild(dishwasher);
 	dishwashercontainer.appendChild(dishwasherL);
@@ -282,7 +282,7 @@ function create_form() {
 	washm.id = "washer";
 	washm.name = "washer";
 	washmval.innerHTML = washm.value + " loads";
-	washm.oninput = function(){
+	washm.oninput = function () {
 		washmval.innerHTML = this.value + " loads";
 	}
 	var washmL = document.createElement("label");
@@ -311,7 +311,7 @@ function create_form() {
 	sink.id = "sink";
 	sink.name = "sink";
 	sinkval.innerHTML = sink.value + " minutes";
-	sink.oninput = function(){
+	sink.oninput = function () {
 		sinkval.innerHTML = this.value + " minutes";
 	}
 	var sinkL = document.createElement("label");
@@ -330,41 +330,58 @@ function create_form() {
 	// BEGIN REGIONAL LEVEL
 	//////////////////////////////////////////////////////////////////////////
 
+
+	var dropcontainer = document.createElement("div");
+	var dropLabel = document.createElement("label");
+	dropLabel.innerHTML = "Select State";
+	var select = document.createElement("select");
+	select.id = "select";
+	var obj;
+	fetch('../data/statescores.json')
+		.then(response => response.json())
+		.then(data => obj = data)
+		.then(() => console.log(obj));
+	dropLabel.setAttribute("for", "select");
+	dropcontainer.appendChild(dropLabel);
+	dropcontainer.appendChild(select);
+
+
 	form.appendChild(br.cloneNode());
 
 	form.appendChild(dietcontainer);
 	form.appendChild(clothingcontainer);
 	form.appendChild(habitcontainer);
 	form.appendChild(appliancecontainer);
+	form.appendChild(dropcontainer);
 
-	/*
+
 	var s = document.createElement("input");
-	    s.setAttribute("type", "submit");
-	    s.setAttribute("value", "submit");
+	s.setAttribute("type", "submit");
+	s.setAttribute("value", "submit");
 
-        form.appendChild(s);
-	*/
+	form.appendChild(s);
+
 	document.getElementsByTagName("body")[0].appendChild(form);
 }
 
 /* When the user clicks on the button,
 	toggle between hiding and showing the dropdown content */
-	function drop() {
-		document.getElementById("stateDropdown").classList.toggle("show");
-		  }
-	  
-		  // Close the dropdown menu if the user clicks outside of it
-		  window.onclick = function(event) {
-			if (!event.target.matches('.dropbtn')) {
-			  var dropdowns = document.getElementsByClassName("state-content");
-			  var i;
-			  for (i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-				  openDropdown.classList.remove('show');
-				}
-			  }
+function drop() {
+	document.getElementById("stateDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+	if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("state-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
 			}
-		  }
+		}
+	}
+}
 
 

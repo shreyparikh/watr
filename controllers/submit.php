@@ -2,20 +2,15 @@
 session_start();
 $score = 5;
 $data = [];
-$states = array();
-{
-    $json = file_get_contents('./data/statescores.json');
-    $temp = json_decode($json, true);
-    for($i = 0; $I < count($temp); $i++){
-        $states[$temp[$i]["State"]] = $temp[$i]["Score"];
-    }
-}
+
+    $json = file_get_contents('../data/statescores.json');
+    $states = json_decode($json, true);
+
 
 
 foreach($_POST as $name => $val){
     $data[$name] = $val;
 }
-
 
 // Personal score eval
 {
@@ -73,9 +68,13 @@ foreach($_POST as $name => $val){
     $score += ((int)$data['sink']/3);
 }
 
-$score += $states[$data['state']];
-
+for($i = 0; $i < count($states); $i++){
+    if($data['state'] == $states[$i]["State"]){
+        $score += (int)$states[$i]["Score"];
+        var_dump($states[$i]);
+    }
+}
 
 $_SESSION['score'] = floor($score * 100) / 100;
-header("Location: ../html/response.php");
+//header("Location: ../html/response.php");
 ?>
