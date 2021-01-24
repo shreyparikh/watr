@@ -15,24 +15,26 @@ function create_form() {
 	//////////////////////////////////////////////////////////
 	var dietcontainer = document.createElement("div");
 
-	var meat = document.createElement("input");
-	meat.setAttribute("type", "checkbox");
-	meat.setAttribute("id", "meat");
-	var meatL = document.createElement("label");
-	meatL.innerHTML = "Meat";
-	meatL.setAttribute("for", "meat");
+	var meatcontainer = document.createElement("div");
+	var mLabel = document.createElement("label");
+	mLabel.innerHTML = "temp";														//TODO meat questions
+	var meatH = document.createElement("input");
+	meatH.setAttribute("type", "radio");
+	meatH.name = "meat";
+	meatH.id = "meatH";
+	var meatM = document.createElement("input");
+	meatM.setAttribute("type", "radio");
+	meatM.name = "meat";
+	meatM.id = "meatM";
+	var meatL = document.createElement("input");
+	meatL.setAttribute("type", "radio");
+	meatL.name = "meat";
+	meatL.id = "meatL";
 
-	var dairy = document.createElement("input");
-	dairy.setAttribute("type", "checkbox");
-	dairy.setAttribute("id", "dairy");
-	var dairyL = document.createElement("label");
-	dairyL.innerHTML = "Dairy";
-	dairyL.setAttribute("for", "dairy");
+	
 
-	dietcontainer.appendChild(meat);
-	dietcontainer.appendChild(meatL);
-	dietcontainer.appendChild(dairy);
-	dietcontainer.appendChild(dairyL);
+	dietcontainer.appendChild(meatcontainer);
+	dietcontainer.appendChild(dairycontainer);
 	///////////////////////////////////////////////////////////
 	// Clothing input
 	///////////////////////////////////////////////////////////
@@ -101,10 +103,10 @@ function create_form() {
 	shower.max = 30;
 	shower.value = 10;
 	shower.id = "shower";
+	showerval.innerHTML = shower.value + " minutes";
 	shower.oninput = function(){
 		showerval.innerHTML = this.value + " minutes";
 	}
-	shower.onload = shower.oninput;
 	var showerL = document.createElement("label");
 	showerL.innerHTML = "How long do you shower each day?";
 	showerL.setAttribute("for", "shower");
@@ -114,11 +116,16 @@ function create_form() {
 
 	var toiletcontainer = document.createElement("div");
 	var toilet = document.createElement("input");
+	var flushval = document.createElement("p");
 	toilet.setAttribute("type", "range");
 	toilet.min = 0;
 	toilet.max = 10;
 	toilet.value = 3;
 	toilet.id = "toilet";
+	flushval.innerHTML = toilet.value + " flushes";
+	toilet.oninput = function(){
+		flushval.innerHTML = this.value + " flushes";
+	}
 	var toiletL = document.createElement("label");
 	toiletL.innerHTML = "Toilet flushes per day";
 	toiletL.setAttribute("for", "toilet");
@@ -126,12 +133,13 @@ function create_form() {
 	lowflow_toilet.setAttribute("type", "checkbox");
 	lowflow_toilet.id = "lowflow_toilet";
 	var lowflow_toiletL = document.createElement("label");
-	lowflow_toiletL.innerHTML = ""							// TODO(Andrew): prompt for low flow toilet
+	lowflow_toiletL.innerHTML = "Do you have a low-flow toilet? (Made after 1992)";
 	lowflow_toiletL.setAttribute("for", "lowflow_toilet");
-	toiletcontainer.appendChild(toilet);
 	toiletcontainer.appendChild(toiletL);
-	toiletcontainer.appendChild(lowflow_toilet);
+	toiletcontainer.appendChild(toilet);
+	toiletcontainer.appendChild(flushval);	
 	toiletcontainer.appendChild(lowflow_toiletL);
+	toiletcontainer.appendChild(lowflow_toilet);
 
 	habitcontainer.appendChild(showercontainer);
 	habitcontainer.appendChild(toiletcontainer);
@@ -163,10 +171,15 @@ function create_form() {
 	var washingcontainer = document.createElement("div");
 	var washm = document.createElement("input");
 	washm.setAttribute("type", "range");
+	var washmval = document.createElement("p");
 	washm.min = 0;
 	washm.max = 15;
 	washm.value = 5;
 	washm.id = "washer";
+	washmval.innerHTML = washm.value + " loads";
+	washm.oninput = function(){
+		washmval.innerHTML = this.value + " loads";
+	}
 	var washmL = document.createElement("label");
 	washmL.innerHTML = "Washing machine uses per week";
 	washmL.setAttribute("for", "washer");
@@ -176,23 +189,30 @@ function create_form() {
 	var washHEL = document.createElement("label");
 	washHEL.innerHTML = "My washer is high efficiency"
 	washHEL.setAttribute("for", "washerHE");
-	washingcontainer.appendChild(washm);
 	washingcontainer.appendChild(washmL);
-	washingcontainer.appendChild(washHE);
+	washingcontainer.appendChild(washm);
+	washingcontainer.appendChild(washmval);
 	washingcontainer.appendChild(washHEL);
+	washingcontainer.appendChild(washHE);
 
 	var sinkcontainer = document.createElement("div");
 	var sink = document.createElement("input");
 	sink.setAttribute("type", "range");
+	var sinkval = document.createElement("p");
 	sink.min = 0;
 	sink.max = 20;
 	sink.value = 5;
 	sink.id = "sink";
+	sinkval.innerHTML = sink.value + " minutes";
+	sink.oninput = function(){
+		sinkval.innerHTML = this.value + " minutes";
+	}
 	var sinkL = document.createElement("label");
 	sinkL.innerHTML = "Minutes sink left running per day";
 	sinkL.setAttribute("for", "sink");
-	sinkcontainer.appendChild(sink);
 	sinkcontainer.appendChild(sinkL);
+	sinkcontainer.appendChild(sink);
+	sinkcontainer.appendChild(sinkval);
 
 	appliancecontainer.appendChild(dishwashercontainer);
 	appliancecontainer.appendChild(washingcontainer);
