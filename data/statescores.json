@@ -1,0 +1,214 @@
+[
+    {
+        "State": "AL",
+        "Score": "10.38"
+    },
+    {
+        "State": "AK",
+        "Score": "2.30"
+    },
+    {
+        "State": "AZ",
+        "Score": "1.62"
+    },
+    {
+        "State": "AR",
+        "Score": "6.00"
+    },
+    {
+        "State": "CA",
+        "Score": "4.62"
+    },
+    {
+        "State": "CO",
+        "Score": "11.08"
+    },
+    {
+        "State": "CT",
+        "Score": "6.46"
+    },
+    {
+        "State": "DE",
+        "Score": "6.23"
+    },
+    {
+        "State": "DC",
+        "Score": "0.00"
+    },
+    {
+        "State": "FL",
+        "Score": "5.08"
+    },
+    {
+        "State": "GA",
+        "Score": "0.92"
+    },
+    {
+        "State": "HI",
+        "Score": "4.85"
+    },
+    {
+        "State": "ID",
+        "Score": "11.77"
+    },
+    {
+        "State": "IL",
+        "Score": "5.77"
+    },
+    {
+        "State": "IN",
+        "Score": "8.30"
+    },
+    {
+        "State": "IA",
+        "Score": "4.15"
+    },
+    {
+        "State": "KS",
+        "Score": "9.23"
+    },
+    {
+        "State": "KY",
+        "Score": "3.92"
+    },
+    {
+        "State": "LA",
+        "Score": "10.85"
+    },
+    {
+        "State": "ME",
+        "Score": "1.15"
+    },
+    {
+        "State": "MD",
+        "Score": "8.54"
+    },
+    {
+        "State": "MA",
+        "Score": "0.46"
+    },
+    {
+        "State": "MI",
+        "Score": "7.38"
+    },
+    {
+        "State": "MN",
+        "Score": "3.23"
+    },
+    {
+        "State": "MS",
+        "Score": "6.70"
+    },
+    {
+        "State": "MO",
+        "Score": "9.46"
+    },
+    {
+        "State": "MT",
+        "Score": "11.54"
+    },
+    {
+        "State": "NE",
+        "Score": "11.30"
+    },
+    {
+        "State": "NV",
+        "Score": "8.08"
+    },
+    {
+        "State": "NH",
+        "Score": "3.00"
+    },
+    {
+        "State": "NJ",
+        "Score": "3.46"
+    },
+    {
+        "State": "NM",
+        "Score": "9.70"
+    },
+    {
+        "State": "NY",
+        "Score": "2.54"
+    },
+    {
+        "State": "NC",
+        "Score": "7.85"
+    },
+    {
+        "State": "ND",
+        "Score": "10.62"
+    },
+    {
+        "State": "OH",
+        "Score": "2.77"
+    },
+    {
+        "State": "OK",
+        "Score": "2.08"
+    },
+    {
+        "State": "OR",
+        "Score": "10.15"
+    },
+    {
+        "State": "PA",
+        "Score": "1.85"
+    },
+    {
+        "State": "RI",
+        "Score": "0.70"
+    },
+    {
+        "State": "SC",
+        "Score": "9.00"
+    },
+    {
+        "State": "SD",
+        "Score": "1.38"
+    },
+    {
+        "State": "TN",
+        "Score": "6.92"
+    },
+    {
+        "State": "TX",
+        "Score": "5.30"
+    },
+    {
+        "State": "UT",
+        "Score": "9.92"
+    },
+    {
+        "State": "VT",
+        "Score": "0.23"
+    },
+    {
+        "State": "VA",
+        "Score": "5.54"
+    },
+    {
+        "State": "WA",
+        "Score": "3.70"
+    },
+    {
+        "State": "WV",
+        "Score": "8.77"
+    },
+    {
+        "State": "WI",
+        "Score": "7.15"
+    },
+    {
+        "State": "WY",
+        "Score": "12.00"
+    },
+    {
+        "State": "PR",
+        "Score": "4.38"
+    },
+    {
+        "State": "VI",
+        "Score": "7.62"
+    }
+]

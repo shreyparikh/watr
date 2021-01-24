@@ -335,10 +335,10 @@
       "New Castle",
       "Sussex"
     ],
-    "DC ": [
+    "DC Of Columbia": [
       "District of Columbia"
     ],
-    "FL": [
+    "Florida": [
       "Alachua",
       "Baker",
       "Bay",
@@ -407,7 +407,7 @@
       "Walton",
       "Washington"
     ],
-    "GA": [
+    "Georgia": [
       "Appling",
       "Atkinson",
       "Bacon",
@@ -568,14 +568,17 @@
       "Wilkinson",
       "Worth"
     ],
-    "HI": [
+    "Guam": [
+      "Guam"
+    ],
+    "Hawaii": [
       "Hawaii",
       "City and County of Honolulu",
       "Kalawao",
       "Kauai",
       "Maui"
     ],
-    "ID": [
+    "Idaho": [
       "Ada",
       "Adams",
       "Bannock",
@@ -621,7 +624,7 @@
       "Valley",
       "Washington"
     ],
-    "IL": [
+    "Illinois": [
       "Adams",
       "Alexander",
       "Bond",
@@ -725,7 +728,7 @@
       "Winnebago",
       "Woodford"
     ],
-    "IN": [
+    "Indiana": [
       "Adams",
       "Allen",
       "Bartholomew",
@@ -819,7 +822,7 @@
       "White",
       "Whitley"
     ],
-    "IA": [
+    "Iowa": [
       "Adair",
       "Adams",
       "Allamakee",
@@ -920,7 +923,7 @@
       "Worth",
       "Wright"
     ],
-    "KS": [
+    "Kansas": [
       "Allen",
       "Anderson",
       "Atchison",
@@ -1027,7 +1030,7 @@
       "Woodson",
       "Wyandotte"
     ],
-    "KY": [
+    "Kentucky": [
       "Adair",
       "Allen",
       "Anderson",
@@ -1149,7 +1152,7 @@
       "Wolfe",
       "Woodford"
     ],
-    "LA": [
+    "Louisiana": [
       "Acadia",
       "Allen",
       "Ascension",
@@ -1215,7 +1218,7 @@
       "West Feliciana",
       "Winn"
     ],
-    "ME": [
+    "Maine": [
       "Androscoggin",
       "Aroostook",
       "Cumberland",
@@ -1233,7 +1236,7 @@
       "Washington",
       "York"
     ],
-    "MD": [
+    "Maryland": [
       "Allegany",
       "Anne Arundel",
       "Baltimore",
@@ -1259,7 +1262,7 @@
       "Worcester",
       "City of Baltimore"
     ],
-    "MA": [
+    "Massachusetts": [
       "Barnstable",
       "Berkshire",
       "Bristol",
@@ -1275,7 +1278,7 @@
       "Suffolk",
       "Worcester"
     ],
-    "MI": [
+    "Michigan": [
       "Alcona",
       "Alger",
       "Allegan",
@@ -1360,7 +1363,7 @@
       "Wayne",
       "Wexford"
     ],
-    "MN": [
+    "Minnesota": [
       "Aitkin",
       "Anoka",
       "Becker",
@@ -1449,7 +1452,7 @@
       "Wright",
       "Yellow Medicine"
     ],
-    "MS": [
+    "Mississippi": [
       "Adams",
       "Alcorn",
       "Amite",
@@ -1533,7 +1536,7 @@
       "Yalobusha",
       "Yazoo"
     ],
-    "MO": [
+    "Missouri": [
       "Adair",
       "Andrew",
       "Atchison",
@@ -1650,7 +1653,7 @@
       "Worth",
       "Wright"
     ],
-    "MT": [
+    "Montana": [
       "Beaverhead",
       "Big Horn",
       "Blaine",
@@ -1708,7 +1711,7 @@
       "Wibaux",
       "Yellowstone"
     ],
-    "NE": [
+    "Nebraska": [
       "Adams",
       "Antelope",
       "Arthur",
@@ -1803,7 +1806,7 @@
       "Wheeler",
       "York"
     ],
-    "NV": [
+    "Nevada": [
       "Consolidated Municipality of Carson City",
       "Churchill",
       "Clark",
@@ -1822,7 +1825,7 @@
       "Washoe",
       "White Pine"
     ],
-    "NH": [
+    "New Hampshire": [
       "Belknap",
       "Carroll",
       "Cheshire",
@@ -1834,7 +1837,7 @@
       "Strafford",
       "Sullivan"
     ],
-    "NJ": [
+    "New Jersey": [
       "Atlantic",
       "Bergen",
       "Burlington",
@@ -1857,7 +1860,7 @@
       "Union",
       "Warren"
     ],
-    "NM": [
+    "New Mexico": [
       "Bernalillo",
       "Catron",
       "Chaves",
@@ -1892,7 +1895,7 @@
       "Union",
       "Valencia"
     ],
-    "NY": [
+    "New York": [
       "Albany",
       "Allegany",
       "Bronx",
@@ -1956,7 +1959,7 @@
       "Wyoming",
       "Yates"
     ],
-    "NC": [
+    "North Carolina": [
       "Alamance",
       "Alexander",
       "Alleghany",
@@ -2058,7 +2061,7 @@
       "Yadkin",
       "Yancey"
     ],
-    "ND": [
+    "North Dakota": [
       "Adams",
       "Barnes",
       "Benson",
@@ -2113,7 +2116,7 @@
       "Wells",
       "Williams"
     ],
-    "OH": [
+    "Ohio": [
       "Adams",
       "Allen",
       "Ashland",
@@ -2203,7 +2206,7 @@
       "Wood",
       "Wyandot"
     ],
-    "OK": [
+    "Oklahoma": [
       "Adair",
       "Alfalfa",
       "Atoka",
@@ -2282,7 +2285,7 @@
       "Woods",
       "Woodward"
     ],
-    "OR": [
+    "Oregon": [
       "Baker",
       "Benton",
       "Clackamas",
@@ -2320,7 +2323,7 @@
       "Wheeler",
       "Yamhill"
     ],
-    "PA": [
+    "Pennsylvania": [
       "Adams",
       "Allegheny",
       "Armstrong",
@@ -2389,14 +2392,14 @@
       "Wyoming",
       "York"
     ],
-    "RI": [
+    "Rhode Island": [
       "Bristol",
       "Kent",
       "Newport",
       "Providence",
       "Washington"
     ],
-    "SC": [
+    "South Carolina": [
       "Abbeville",
       "Aiken",
       "Allendale",
@@ -2444,7 +2447,7 @@
       "Williamsburg",
       "York"
     ],
-    "SD": [
+    "South Dakota": [
       "Aurora",
       "Beadle",
       "Bennett",
@@ -2512,7 +2515,7 @@
       "Yankton",
       "Ziebach"
     ],
-    "TN": [
+    "Tennessee": [
       "Anderson",
       "Bedford",
       "Benton",
@@ -2609,7 +2612,7 @@
       "Williamson",
       "Wilson"
     ],
-    "TX": [
+    "Texas": [
       "Anderson",
       "Andrews",
       "Angelina",
@@ -2865,7 +2868,7 @@
       "Zapata",
       "Zavala"
     ],
-    "UT": [
+    "Utah": [
       "Beaver",
       "Box Elder",
       "Cache",
@@ -2896,7 +2899,7 @@
       "Wayne",
       "Weber"
     ],
-    "VT": [
+    "Vermont": [
       "Addison",
       "Bennington",
       "Caledonia",
@@ -2912,7 +2915,7 @@
       "Windham",
       "Windsor"
     ],
-    "VA": [
+    "Virginia": [
       "Accomack",
       "Albemarle",
       "Alleghany",
@@ -3047,7 +3050,7 @@
       "City of Williamsburg",
       "City of Winchester"
     ],
-    "WA": [
+    "Washington": [
       "Adams",
       "Asotin",
       "Benton",
@@ -3088,7 +3091,7 @@
       "Whitman",
       "Yakima"
     ],
-    "WV": [
+    "West Virginia": [
       "Barbour",
       "Berkeley",
       "Boone",
@@ -3145,7 +3148,7 @@
       "Wood",
       "Wyoming"
     ],
-    "WI": [
+    "Wisconsin": [
       "Adams",
       "Ashland",
       "Barron",
@@ -3219,7 +3222,7 @@
       "Winnebago",
       "Wood"
     ],
-    "WY": [
+    "Wyoming": [
       "Albany",
       "Big Horn",
       "Campbell",

@@ -1,8 +1,13 @@
 <?php
 
-$meatH = $_POST['meatH'];
-$meatM = $_POST['meatM'];
-$meatL = $_POST['meatL'];
-$meatN = $_POST['meatN'];
+$meat = $_POST['meat'];
 
+$dairy = $_POST['dairy'];
+
+$clothing = $_POST['clothfreq'];
+
+echo($meat);
+
+
+header("Location: ../html/response.html");
 ?>

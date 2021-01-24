@@ -7,7 +7,7 @@ function create_form() {
 	// create form and set attributes
 	var form = document.createElement("form");
 	form.setAttribute("method", "post");
-	form.setAttribute("action", "submit.php");
+	form.setAttribute("action", "/controllers/submit.php");
 	form.style.alignContent = 'center';
 
 	//////////////////////////////////////////////////////////
