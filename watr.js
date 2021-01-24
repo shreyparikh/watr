@@ -24,6 +24,7 @@ function create_form() {
 	meatH.setAttribute("type", "radio");
 	meatH.name = "meat";
 	meatH.id = "meatH";
+	meatH.required = true;
 	var mHLabel = document.createElement("label");
 	mHLabel.innerHTML = "High";
 	mHLabel.setAttribute("for", "meatH");
@@ -68,6 +69,7 @@ function create_form() {
 	dairyH.setAttribute("type", "radio");
 	dairyH.name = "dairy";
 	dairyH.id = "dairyH";
+	dairyH.required = true;
 	var dHLabel = document.createElement("label");
 	dHLabel.innerHTML = "High";
 	dHLabel.setAttribute("for", "dairyH");
@@ -156,6 +158,8 @@ function create_form() {
 	rarelyL.innerHTML = "Rarely";
 	rarelyL.setAttribute("for", "rarely");
 
+	rarely.required = true;
+
 	innerclothingcontainer.appendChild(weekly);
 	innerclothingcontainer.appendChild(weeklyL);
 	innerclothingcontainer.appendChild(monthly);
@@ -242,6 +246,8 @@ function create_form() {
 	var handwashL = document.createElement("label");
 	handwashL.innerHTML = "I wash by hand";
 	handwashL.setAttribute("for", "handwash");
+	
+	handwash.required = true;
 	dishwashercontainer.appendChild(dishwasher);
 	dishwashercontainer.appendChild(dishwasherL);
 	dishwashercontainer.appendChild(handwash);
@@ -301,6 +307,7 @@ function create_form() {
 	//////////////////////////////////////////////////////////////////////////
 	// BEGIN REGIONAL LEVEL
 	//////////////////////////////////////////////////////////////////////////
+	
 
 	var s = document.createElement("input");
 	s.setAttribute("type", "submit");
