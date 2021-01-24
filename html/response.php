@@ -1,3 +1,8 @@
+<?php
+session_start();
+$score = $_SESSION['score'];
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 

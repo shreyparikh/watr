@@ -2,6 +2,7 @@
 // break line
 var br = document.createElement("br");
 
+// Populate the index.html with personal form
 function create_form() {
 
 	// create form and set attributes
@@ -24,6 +25,7 @@ function create_form() {
 	meatH.setAttribute("type", "radio");
 	meatH.name = "meat";
 	meatH.id = "meatH";
+	meatH.value = "high";
 	meatH.required = true;
 	var mHLabel = document.createElement("label");
 	mHLabel.innerHTML = "High";
@@ -32,6 +34,7 @@ function create_form() {
 	meatM.setAttribute("type", "radio");
 	meatM.name = "meat";
 	meatM.id = "meatM";
+	meatM.value = "med";
 	var mMLabel = document.createElement("label");
 	mMLabel.innerHTML = "Medium";
 	mMLabel.setAttribute("for", "meatM");
@@ -39,6 +42,7 @@ function create_form() {
 	meatL.setAttribute("type", "radio");
 	meatL.name = "meat";
 	meatL.id = "meatL";
+	meatL.value = "low";
 	var mLLabel = document.createElement("label");
 	mLLabel.innerHTML = "Low";
 	mLLabel.setAttribute("for", "meatL");
@@ -46,6 +50,7 @@ function create_form() {
 	meatN.setAttribute("type", "radio");
 	meatN.name = "meat";
 	meatN.id = "meatN";
+	meatN.value = "none";
 	var mNLabel = document.createElement("label");
 	mNLabel.innerHTML = "None";
 	mNLabel.setAttribute("for", "meatN");
@@ -69,6 +74,7 @@ function create_form() {
 	dairyH.setAttribute("type", "radio");
 	dairyH.name = "dairy";
 	dairyH.id = "dairyH";
+	dairyH.value = "high";
 	dairyH.required = true;
 	var dHLabel = document.createElement("label");
 	dHLabel.innerHTML = "High";
@@ -77,6 +83,7 @@ function create_form() {
 	dairyM.setAttribute("type", "radio");
 	dairyM.name = "dairy";
 	dairyM.id = "dairyM";
+	dairyM.value = "med";
 	var mMLabel = document.createElement("label");
 	mMLabel.innerHTML = "Medium";
 	mMLabel.setAttribute("for", "dairyM");
@@ -84,6 +91,7 @@ function create_form() {
 	dairyL.setAttribute("type", "radio");
 	dairyL.name = "dairy";
 	dairyL.id = "dairyL";
+	dairyL.value = "low";
 	var dLLabel = document.createElement("label");
 	dLLabel.innerHTML = "Low";
 	dLLabel.setAttribute("for", "dairyL");
@@ -91,6 +99,7 @@ function create_form() {
 	dairyN.setAttribute("type", "radio");
 	dairyN.name = "dairy";
 	dairyN.id = "dairyN";
+	dairyN.value = "none";
 	var dNLabel = document.createElement("label");
 	dNLabel.innerHTML = "None";
 	dNLabel.setAttribute("for", "dairyN");
@@ -122,6 +131,7 @@ function create_form() {
 	weekly.setAttribute("type", "radio");
 	weekly.setAttribute("id", "weekly");
 	weekly.name = "clothfreq";
+	weekly.value = "weekly";
 	var weeklyL = document.createElement("label");
 	weeklyL.innerHTML = "Weekly";
 	weeklyL.setAttribute("for", "weekly");
@@ -130,6 +140,7 @@ function create_form() {
 	monthly.setAttribute("type", "radio");
 	monthly.setAttribute("id", "monthly");
 	monthly.name = "clothfreq";
+	monthly.value = "monthly";
 	var monthlyL = document.createElement("label");
 	monthlyL.innerHTML = "Monthly";
 	monthlyL.setAttribute("for", "monthly");
@@ -138,6 +149,7 @@ function create_form() {
 	semimonthly.setAttribute("type", "radio");
 	semimonthly.setAttribute("id", "semimonthly");
 	semimonthly.name = "clothfreq";
+	semimonthly.value = "semimonthly";
 	var semimonthlyL = document.createElement("label");
 	semimonthlyL.innerHTML = "Semi-Monthly";
 	semimonthlyL.setAttribute("for", "semimonthly");
@@ -146,6 +158,7 @@ function create_form() {
 	seasonally.setAttribute("type", "radio");
 	seasonally.setAttribute("id", "seasonally");
 	seasonally.name = "clothfreq";
+	seasonally.value = "seasonally";
 	var seasonallyL = document.createElement("label");
 	seasonallyL.innerHTML = "Seasonally";
 	seasonallyL.setAttribute("for", "seasonally");
@@ -154,6 +167,7 @@ function create_form() {
 	rarely.setAttribute("type", "radio");
 	rarely.setAttribute("id", "rarely");
 	rarely.name = "clothfreq";
+	rarely.value = "rarely";
 	var rarelyL = document.createElement("label");
 	rarelyL.innerHTML = "Rarely";
 	rarelyL.setAttribute("for", "rarely");
@@ -186,6 +200,7 @@ function create_form() {
 	shower.max = 30;
 	shower.value = 10;
 	shower.id = "shower";
+	shower.name = "shower";
 	showerval.innerHTML = shower.value + " minutes";
 	shower.oninput = function(){
 		showerval.innerHTML = this.value + " minutes";
@@ -205,6 +220,7 @@ function create_form() {
 	toilet.max = 10;
 	toilet.value = 3;
 	toilet.id = "toilet";
+	toilet.name = "toilet";
 	flushval.innerHTML = toilet.value + " flushes";
 	toilet.oninput = function(){
 		flushval.innerHTML = this.value + " flushes";
@@ -215,6 +231,7 @@ function create_form() {
 	var lowflow_toilet = document.createElement("input");
 	lowflow_toilet.setAttribute("type", "checkbox");
 	lowflow_toilet.id = "lowflow_toilet";
+	lowflow_toilet.name = "lowflow_toilet";
 	var lowflow_toiletL = document.createElement("label");
 	lowflow_toiletL.innerHTML = "Do you have a low-flow toilet? (Made after 1992)";
 	lowflow_toiletL.setAttribute("for", "lowflow_toilet");
@@ -236,6 +253,7 @@ function create_form() {
 	dishwasher.setAttribute("type", "radio");
 	dishwasher.name = "dishwasher";
 	dishwasher.id = "dishwasher";
+	dishwasher.value = "dishwasher";
 	var dishwasherL = document.createElement("label");
 	dishwasherL.innerHTML = "I use a dishwasher";
 	dishwasherL.setAttribute("for", "dishwasher");
@@ -243,6 +261,7 @@ function create_form() {
 	handwash.setAttribute("type", "radio");
 	handwash.name = "dishwasher";
 	handwash.id = "handwash";
+	handwash.value = "handwash";
 	var handwashL = document.createElement("label");
 	handwashL.innerHTML = "I wash by hand";
 	handwashL.setAttribute("for", "handwash");
@@ -261,6 +280,7 @@ function create_form() {
 	washm.max = 15;
 	washm.value = 5;
 	washm.id = "washer";
+	washm.name = "washer";
 	washmval.innerHTML = washm.value + " loads";
 	washm.oninput = function(){
 		washmval.innerHTML = this.value + " loads";
@@ -271,6 +291,7 @@ function create_form() {
 	var washHE = document.createElement("input");
 	washHE.setAttribute("type", "checkbox");
 	washHE.id = "washerHE";
+	washHE.name = "washerHE";
 	var washHEL = document.createElement("label");
 	washHEL.innerHTML = "My washer is high efficiency"
 	washHEL.setAttribute("for", "washerHE");
@@ -288,6 +309,7 @@ function create_form() {
 	sink.max = 20;
 	sink.value = 5;
 	sink.id = "sink";
+	sink.name = "sink";
 	sinkval.innerHTML = sink.value + " minutes";
 	sink.oninput = function(){
 		sinkval.innerHTML = this.value + " minutes";
@@ -307,7 +329,6 @@ function create_form() {
 	//////////////////////////////////////////////////////////////////////////
 	// BEGIN REGIONAL LEVEL
 	//////////////////////////////////////////////////////////////////////////
-	
 
 	var s = document.createElement("input");
 	s.setAttribute("type", "submit");
@@ -323,5 +344,25 @@ function create_form() {
 
 	document.getElementsByTagName("body")[0].appendChild(form);
 }
+
+/* When the user clicks on the button,
+	toggle between hiding and showing the dropdown content */
+	function drop() {
+		document.getElementById("stateDropdown").classList.toggle("show");
+		  }
+	  
+		  // Close the dropdown menu if the user clicks outside of it
+		  window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+			  var dropdowns = document.getElementsByClassName("state-content");
+			  var i;
+			  for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+				  openDropdown.classList.remove('show');
+				}
+			  }
+			}
+		  }
 
 
