@@ -16,14 +16,14 @@ function create_form() {
 	var dietcontainer = document.createElement("div");
 
 	var meat = document.createElement("input");
-	meat.setAttribute("type", "radio");
+	meat.setAttribute("type", "checkbox");
 	meat.setAttribute("id", "meat");
 	var meatL = document.createElement("label");
 	meatL.innerHTML = "Meat";
 	meatL.setAttribute("for", "meat");
 
 	var dairy = document.createElement("input");
-	dairy.setAttribute("type", "radio");
+	dairy.setAttribute("type", "checkbox");
 	dairy.setAttribute("id", "dairy");
 	var dairyL = document.createElement("label");
 	dairyL.innerHTML = "Dairy";
@@ -41,6 +41,7 @@ function create_form() {
 	var weekly = document.createElement("input");
 	weekly.setAttribute("type", "radio");
 	weekly.setAttribute("id", "weekly");
+	weekly.name = "clothfreq";
 	var weeklyL = document.createElement("label");
 	weeklyL.innerHTML = "Weekly";
 	weeklyL.setAttribute("for", "weekly");
@@ -48,6 +49,7 @@ function create_form() {
 	var monthly = document.createElement("input");
 	monthly.setAttribute("type", "radio");
 	monthly.setAttribute("id", "monthly");
+	monthly.name = "clothfreq";
 	var monthlyL = document.createElement("label");
 	monthlyL.innerHTML = "Monthly";
 	monthlyL.setAttribute("for", "monthly");
@@ -55,6 +57,7 @@ function create_form() {
 	var semimonthly = document.createElement("input");
 	semimonthly.setAttribute("type", "radio");
 	semimonthly.setAttribute("id", "semimonthly");
+	semimonthly.name = "clothfreq";
 	var semimonthlyL = document.createElement("label");
 	semimonthlyL.innerHTML = "Semi-Monthly";
 	semimonthlyL.setAttribute("for", "semimonthly");
@@ -62,6 +65,7 @@ function create_form() {
 	var seasonally = document.createElement("input");
 	seasonally.setAttribute("type", "radio");
 	seasonally.setAttribute("id", "seasonally");
+	seasonally.name = "clothfreq";
 	var seasonallyL = document.createElement("label");
 	seasonallyL.innerHTML = "Seasonally";
 	seasonallyL.setAttribute("for", "seasonally");
@@ -69,6 +73,7 @@ function create_form() {
 	var rarely = document.createElement("input");
 	rarely.setAttribute("type", "radio");
 	rarely.setAttribute("id", "rarely");
+	rarely.name = "clothfreq";
 	var rarelyL = document.createElement("label");
 	rarelyL.innerHTML = "Rarely";
 	rarelyL.setAttribute("for", "rarely");
@@ -90,12 +95,22 @@ function create_form() {
 
 	var showercontainer = document.createElement("div");
 	var shower = document.createElement("input");
+	var showerval = document.createElement("p");
 	shower.setAttribute("type", "range");
 	shower.min = 0;
 	shower.max = 30;
 	shower.value = 10;
 	shower.id = "shower";
+	shower.oninput = function(){
+		showerval.innerHTML = this.value + " minutes";
+	}
+	shower.onload = shower.oninput;
+	var showerL = document.createElement("label");
+	showerL.innerHTML = "How long do you shower each day?";
+	showerL.setAttribute("for", "shower");
+	showercontainer.appendChild(showerL);
 	showercontainer.appendChild(shower);
+	showercontainer.appendChild(showerval);
 
 	var toiletcontainer = document.createElement("div");
 	var toilet = document.createElement("input");
@@ -201,6 +216,5 @@ function create_form() {
 
 	document.getElementsByTagName("body")[0].appendChild(form);
 }
-
 
 
