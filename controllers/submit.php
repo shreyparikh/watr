@@ -1,8 +1,16 @@
 <?php
 session_start();
-$DEBUG = true;
 $score = 5;
 $data = [];
+$states = array();
+{
+    $json = file_get_contents('./data/statescores.json');
+    $temp = json_decode($json, true);
+    for($i = 0; $I < count($temp); $i++){
+        $states[$temp[$i]["State"]] = $temp[$i]["Score"];
+    }
+}
+
 
 foreach($_POST as $name => $val){
     $data[$name] = $val;
@@ -64,6 +72,8 @@ foreach($_POST as $name => $val){
 
     $score += ((int)$data['sink']/3);
 }
+
+$score += $states[$data['state']];
 
 
 $_SESSION['score'] = floor($score * 100) / 100;

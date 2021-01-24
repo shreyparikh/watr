@@ -330,18 +330,20 @@ function create_form() {
 	// BEGIN REGIONAL LEVEL
 	//////////////////////////////////////////////////////////////////////////
 
-	var s = document.createElement("input");
-	s.setAttribute("type", "submit");
-	s.setAttribute("value", "submit");
-
 	form.appendChild(br.cloneNode());
 
 	form.appendChild(dietcontainer);
 	form.appendChild(clothingcontainer);
 	form.appendChild(habitcontainer);
 	form.appendChild(appliancecontainer);
-	form.appendChild(s);
 
+	/*
+	var s = document.createElement("input");
+	    s.setAttribute("type", "submit");
+	    s.setAttribute("value", "submit");
+
+        form.appendChild(s);
+	*/
 	document.getElementsByTagName("body")[0].appendChild(form);
 }
 
