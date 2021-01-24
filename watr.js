@@ -16,29 +16,105 @@ function create_form() {
 	var dietcontainer = document.createElement("div");
 
 	var meatcontainer = document.createElement("div");
+	meatcontainer.id = "meatcontainer";
 	var mLabel = document.createElement("label");
-	mLabel.innerHTML = "temp";														//TODO meat questions
+	mLabel.setAttribute("for", "meatcontainer");
+	mLabel.innerHTML = "What would you rate your meat consumption?";	
 	var meatH = document.createElement("input");
 	meatH.setAttribute("type", "radio");
 	meatH.name = "meat";
 	meatH.id = "meatH";
+	var mHLabel = document.createElement("label");
+	mHLabel.innerHTML = "High";
+	mHLabel.setAttribute("for", "meatH");
 	var meatM = document.createElement("input");
 	meatM.setAttribute("type", "radio");
 	meatM.name = "meat";
 	meatM.id = "meatM";
+	var mMLabel = document.createElement("label");
+	mMLabel.innerHTML = "Medium";
+	mMLabel.setAttribute("for", "meatM");
 	var meatL = document.createElement("input");
 	meatL.setAttribute("type", "radio");
 	meatL.name = "meat";
 	meatL.id = "meatL";
+	var mLLabel = document.createElement("label");
+	mLLabel.innerHTML = "Low";
+	mLLabel.setAttribute("for", "meatL");
+	var meatN = document.createElement("input");
+	meatN.setAttribute("type", "radio");
+	meatN.name = "meat";
+	meatN.id = "meatN";
+	var mNLabel = document.createElement("label");
+	mNLabel.innerHTML = "None";
+	mNLabel.setAttribute("for", "meatN");
 
+	meatcontainer.appendChild(meatH);
+	meatcontainer.appendChild(mHLabel);
+	meatcontainer.appendChild(meatM);
+	meatcontainer.appendChild(mMLabel);
+	meatcontainer.appendChild(meatL);
+	meatcontainer.appendChild(mLLabel);
+	meatcontainer.appendChild(meatN);
+	meatcontainer.appendChild(mNLabel);
+
+
+	var dairycontainer = document.createElement("div");
+	dairycontainer.id = "dairycontainer";
+	var dLabel = document.createElement("label");
+	dLabel.setAttribute("for", "dairycontainer");
+	dLabel.innerHTML = "What would you rate your dairy consumption?";
+	var dairyH = document.createElement("input");
+	dairyH.setAttribute("type", "radio");
+	dairyH.name = "dairy";
+	dairyH.id = "dairyH";
+	var dHLabel = document.createElement("label");
+	dHLabel.innerHTML = "High";
+	dHLabel.setAttribute("for", "dairyH");
+	var dairyM = document.createElement("input");
+	dairyM.setAttribute("type", "radio");
+	dairyM.name = "dairy";
+	dairyM.id = "dairyM";
+	var mMLabel = document.createElement("label");
+	mMLabel.innerHTML = "Medium";
+	mMLabel.setAttribute("for", "dairyM");
+	var dairyL = document.createElement("input");
+	dairyL.setAttribute("type", "radio");
+	dairyL.name = "dairy";
+	dairyL.id = "dairyL";
+	var dLLabel = document.createElement("label");
+	dLLabel.innerHTML = "Low";
+	dLLabel.setAttribute("for", "dairyL");
+	var dairyN = document.createElement("input");
+	dairyN.setAttribute("type", "radio");
+	dairyN.name = "dairy";
+	dairyN.id = "dairyN";
+	var dNLabel = document.createElement("label");
+	dNLabel.innerHTML = "None";
+	dNLabel.setAttribute("for", "dairyN");
+
+	dairycontainer.appendChild(dairyH);
+	dairycontainer.appendChild(dHLabel);
+	dairycontainer.appendChild(dairyM);
+	dairycontainer.appendChild(mMLabel);
+	dairycontainer.appendChild(dairyL);
+	dairycontainer.appendChild(dLLabel);
+	dairycontainer.appendChild(dairyN);
+	dairycontainer.appendChild(dNLabel);
 	
-
+	dietcontainer.appendChild(mLabel);
 	dietcontainer.appendChild(meatcontainer);
+	dietcontainer.appendChild(dLabel);
 	dietcontainer.appendChild(dairycontainer);
 	///////////////////////////////////////////////////////////
 	// Clothing input
 	///////////////////////////////////////////////////////////
 	var clothingcontainer = document.createElement("div");
+	var innerclothingcontainer = document.createElement("div");
+	innerclothingcontainer.id = "innerclothingcontainer";
+	var cLabel = document.createElement("label");
+	cLabel.innerHTML = "How often do you buy new clothes?";
+	cLabel.setAttribute("for", "innerclothingcontainer");
 
 	var weekly = document.createElement("input");
 	weekly.setAttribute("type", "radio");
@@ -80,16 +156,19 @@ function create_form() {
 	rarelyL.innerHTML = "Rarely";
 	rarelyL.setAttribute("for", "rarely");
 
-	clothingcontainer.appendChild(weekly);
-	clothingcontainer.appendChild(weeklyL);
-	clothingcontainer.appendChild(monthly);
-	clothingcontainer.appendChild(monthlyL);
-	clothingcontainer.appendChild(semimonthly);
-	clothingcontainer.appendChild(semimonthlyL);
-	clothingcontainer.appendChild(seasonally);
-	clothingcontainer.appendChild(seasonallyL);
-	clothingcontainer.appendChild(rarely);
-	clothingcontainer.appendChild(rarelyL);
+	innerclothingcontainer.appendChild(weekly);
+	innerclothingcontainer.appendChild(weeklyL);
+	innerclothingcontainer.appendChild(monthly);
+	innerclothingcontainer.appendChild(monthlyL);
+	innerclothingcontainer.appendChild(semimonthly);
+	innerclothingcontainer.appendChild(semimonthlyL);
+	innerclothingcontainer.appendChild(seasonally);
+	innerclothingcontainer.appendChild(seasonallyL);
+	innerclothingcontainer.appendChild(rarely);
+	innerclothingcontainer.appendChild(rarelyL);
+
+	clothingcontainer.appendChild(cLabel);
+	clothingcontainer.appendChild(innerclothingcontainer);
 	////////////////////////////////////////////////////////////////
 	// Daily Habits
 	////////////////////////////////////////////////////////////////
