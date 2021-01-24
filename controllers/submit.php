@@ -27,7 +27,7 @@ foreach($_POST as $name => $val){
         $score += 5;
     }
 
-    switch($data['clothing']){
+    switch($data['clothfreq']){
         case "weekly":
             $score += 3;
             break;
@@ -66,7 +66,6 @@ foreach($_POST as $name => $val){
 }
 
 
-$_SESSION['score'] = $score;
-//header("Location: ../html/response.php");
-
+$_SESSION['score'] = floor($score * 100) / 100;
+header("Location: ../html/response.php");
 ?>
