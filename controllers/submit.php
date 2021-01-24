@@ -68,13 +68,13 @@ foreach($_POST as $name => $val){
     $score += ((int)$data['sink']/3);
 }
 
-for($i = 0; $i < count($states); $i++){
+/*for($i = 0; $i < count($states); $i++){
     if($data['state'] == $states[$i]["State"]){
         $score += (int)$states[$i]["Score"];
         var_dump($states[$i]);
     }
-}
+}*/
 
 $_SESSION['score'] = floor($score * 100) / 100;
-//header("Location: ../html/response.php");
+header("Location: ../html/response.php");
 ?>

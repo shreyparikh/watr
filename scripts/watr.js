@@ -336,15 +336,16 @@ function create_form() {
 	dropLabel.innerHTML = "Select State";
 	var select = document.createElement("select");
 	select.id = "select";
-	var obj;
-	fetch('../data/statescores.json')
-		.then(response => response.json())
-		.then(data => obj = data)
-		.then(() => console.log(obj));
 	dropLabel.setAttribute("for", "select");
 	dropcontainer.appendChild(dropLabel);
 	dropcontainer.appendChild(select);
-
+	var obj;
+	fetch('../data/statescores.json')
+		.then(response => response.json()) 
+	
+	for(object in obj){
+		console.log(object['State']);
+	}
 
 	form.appendChild(br.cloneNode());
 
@@ -359,6 +360,7 @@ function create_form() {
 	s.setAttribute("type", "submit");
 	s.setAttribute("value", "submit");
 
+	form.appendChild(br.cloneNode());
 	form.appendChild(s);
 
 	document.getElementsByTagName("body")[0].appendChild(form);

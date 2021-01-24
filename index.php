@@ -12,12 +12,9 @@
 </head>
 <link rel="stylesheet" href="style/styles.css">
 <script src="scripts/watr.js"></script>
-<script>
-    create_form();
-</script>
 
 <!--Consider showing menu first, then opening form with a button-->
-<body>
+<body onload="create_form()">
     
    
 </body>
